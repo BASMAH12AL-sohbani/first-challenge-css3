@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px; 
+    
+}
+.continer{
+    margin: auto;
+    
+}
+.item-content{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    color: hsla(0, 0%, 100%, 0.75);
+    
+}
+.first-item{
+    width: 250px;
+    height: 450px;
+    background-color: hsl(31, 77%, 52%);
+    position: relative;
+    border-radius: 10px 0 0 10px;
+}
+.second-item{
+    width: 250px;
+    height: 450px;
+    background-color: hsl(184, 100%, 22%);
+    position: relative;
+    
+}
+.third-item{
+    width: 250px;
+    height: 450px;
+    background-color: hsl(179, 100%, 13%);
+    position: relative;
+    border-radius: 0 10px 10px 0;
+}
+.item-content .first-item img ,.second-item img , .third-item img{
+    margin: 30px 40px;
+}
+.item-content .first-item h1 ,.second-item h1 , .third-item h1{
+    text-transform: uppercase;
+    margin-left: 40px ;
+    color: #fff;
+    font-family: 'Big Shoulders Display', cursive;
+    /* letter-spacing: 2px;
+    font-family: 700; */
+}
+.item-content .first-item p ,.second-item p , .third-item p{
+    /*  */
+    margin: 20px 40px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+}
+button{
+    width: 130px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    margin-left: 40px;
+    margin-top: 50px;
+    background-color: hsl(0, 0%, 95%);
+}
+.first-item button{
+    color: hsl(31, 77%, 52%);
+}
+.item-content .first-item button:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border: 1px solid #fff;
+}
+.second-item button{
+    color: hsl(184, 100%, 22%);
+}
+.item-content .second-item button:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border: 1px solid #fff;
+}
+.third-item button{
+    color: hsl(179, 100%, 13%);
+}
+.item-content .third-item button:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border: 1px solid #fff;
+}
+@media (max-width:750px){
+    .item-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 100px;
+        color: hsla(0, 0%, 100%, 0.75);
+    }
+}
+@media (max-width:1440px){
+    .item-content{
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        color: hsla(0, 0%, 100%, 0.75);
+    }
+}
